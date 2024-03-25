@@ -1,0 +1,94 @@
+@font-face {
+    font-family: clock;
+    src: url(fonts/digital-7.ttf);
+}
+
+.cal {
+    width: 293px;
+    height: 470px;
+    background-image: url(images/calculator.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: red;
+    position: relative;
+    margin: 75px auto;
+}
+
+.inp1 {
+    width: 253px;
+    height: 67px;
+    font-size: 60px;
+    position: absolute;
+    left: 11px;
+    top: 20px;
+    background-color: #6f96b3;
+    text-align: end;
+    border: none;
+    color: white;
+    font-family: clock;
+}
+
+.inp1:focus, .inp2:focus {
+    outline: none;
+}
+
+.cal > div {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.one, .two, .three {
+    bottom: 80px;
+}
+
+.four, .five, .six, .divide {
+    bottom: 138px;
+}
+
+.seven, .eight, .nine, .mul {
+    top: 218px;
+}
+
+.divide, .mul, .sub, .equ {
+    right: 25px;
+}
+
+.equ {
+    height: 114px !important;
+}
+
+.c, .del, .add, .sub {
+    top: 160px;
+}
+
+.zero, .mod, .dec, .equ {
+    bottom: 20px;
+}
+
+.one, .four, .seven, .dec, .c {
+    left: 20px;
+}
+
+.two, .five, .eight, .zero, .del {
+    left: 84px;
+}
+
+.three, .six, .nine, .mod, .add {
+    right: 90px;
+}
+
+.inp2 {
+    width: 253px;
+    position: absolute;
+    top: 84px;
+    left: 11px;
+    height: 36px;
+    text-align: end;
+    color: white;
+    font-size: 27px;
+    background-color: #6f96b3;
+    font-family: clock;
+    border: none;
+}
