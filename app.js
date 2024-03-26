@@ -64,50 +64,52 @@ var sub, div, mod;
 var inp2 = document.getElementsByClassName("inp2")[0];
 
 document.getElementsByClassName("equ")[0].addEventListener("click", function () {
-    nos.push(inp1.value);
-    switch (operator) {
-        case "add":
-            for (var i = 0; i < nos.length; i++) {
-                sum += Number(nos[i]);
-            }
-            inp2.value = sum;
-            sum = 0;
-            break;
-        case "sub":
-            for (var i = 1; i < nos.length; i++) {
-                sum += Number(nos[i]);
-            }
-            sub = Number(nos[0]) - sum;
-            inp2.value = sub;
-            sub = 0;
-            break;
-        case "mul":
-            for (var i = 0; i < nos.length; i++) {
-                mul *= Number(nos[i]);
-            }
-            inp2.value = mul;
-            mul = 0;
-            break;
-        case "div":
-            div = Number(nos[0]);
-            for (var i = 1; i < nos.length; i++) {
-                div /= Number(nos[i]);
-            }
-            inp2.value = div;
-            div = 0;
-            break;
-        case "mod":
-            mod = Number(nos[0]);
-            for (var i = 0; i < nos.length; i++) {
-                mod %= Number(nos[i]);
-            }
-            inp2.value = mod;
-            mod = 0;
-            break;
-    }
-    nos = [];
-    operator = "";
-    equClicked = true;
+    if (inp1.value) {
+        nos.push(inp1.value);
+        switch (operator) {
+            case "add":
+                for (var i = 0; i < nos.length; i++) {
+                    sum += Number(nos[i]);
+                }
+                inp2.value = sum;
+                sum = 0;
+                break;
+            case "sub":
+                for (var i = 1; i < nos.length; i++) {
+                    sum += Number(nos[i]);
+                }
+                sub = Number(nos[0]) - sum;
+                inp2.value = sub;
+                sub = 0;
+                break;
+            case "mul":
+                for (var i = 0; i < nos.length; i++) {
+                    mul *= Number(nos[i]);
+                }
+                inp2.value = mul;
+                mul = 0;
+                break;
+            case "div":
+                div = Number(nos[0]);
+                for (var i = 1; i < nos.length; i++) {
+                    div /= Number(nos[i]);
+                }
+                inp2.value = div;
+                div = 0;
+                break;
+            case "mod":
+                mod = Number(nos[0]);
+                for (var i = 0; i < nos.length; i++) {
+                    mod %= Number(nos[i]);
+                }
+                inp2.value = mod;
+                mod = 0;
+                break;
+        }
+        nos = [];
+        operator = "";
+        equClicked = true;
+        }
     }
 );
 
