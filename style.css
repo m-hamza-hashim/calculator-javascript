@@ -43,7 +43,7 @@
     bottom: 80px;
 }
 
-.four, .five, .six, .divide {
+.four, .five, .six, .div {
     bottom: 138px;
 }
 
@@ -51,7 +51,7 @@
     top: 218px;
 }
 
-.divide, .mul, .sub, .equ {
+.div, .mul, .sub, .equ {
     right: 25px;
 }
 
