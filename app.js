@@ -99,7 +99,7 @@ document.getElementsByClassName("equ")[0].addEventListener("click", function () 
                 break;
             case "mod":
                 mod = Number(nos[0]);
-                for (var i = 0; i < nos.length; i++) {
+                for (var i = 1; i < nos.length; i++) {
                     mod %= Number(nos[i]);
                 }
                 inp2.value = mod;
